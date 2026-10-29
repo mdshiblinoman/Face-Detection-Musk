@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Face Mask Detection",
+    "slug": "face-mask-detection",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#0B1220"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Take a photo to check whether a face mask is detected."
+      }
+    },
+    "android": {
+      "permissions": ["CAMERA"],
+      "adaptiveIcon": {
+        "backgroundColor": "#0B1220"
+      }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose a photo to check whether a face mask is detected.",
+          "cameraPermission": "Take a photo to check whether a face mask is detected."
+        }
+      ]
+    ]
+  }
+}
